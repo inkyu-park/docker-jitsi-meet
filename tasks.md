@@ -38,6 +38,7 @@ sudo docker cp dockerjitsimeet_web_1:/config/interface_config.js ./interface_con
 
 docker cp ~/new-live-learning/jitsi-meet/css/all.css dockerjitsimeet_web_1:/usr/share/jitsi-meet/css/all.css
 docker cp ~/new-live-learning/jitsi-meet/css/all.bundle.css.map dockerjitsimeet_web_1:/usr/share/jitsi-meet/css/all.bundle.css.map
+for f in ~/new-live-learning/jitsi-meet/lang/*; do docker cp $f dockerjitsimeet_web_1:/usr/share/jitsi-meet/lang/; done
 for f in ~/new-live-learning/jitsi-meet/libs/*; do docker cp $f dockerjitsimeet_web_1:/usr/share/jitsi-meet/libs/; done
 ````
 

@@ -302,7 +302,7 @@ var config = {
     // Misc
 
     // Default value for the channel "last N" attribute. -1 for unlimited.
-    channelLastN: -1,
+    channelLastN: 1,
 
     // Connection indicators
     // connectionIndicators: {
@@ -1249,7 +1249,7 @@ var config = {
     // ],
 
     // Prevent the filmstrip from autohiding when screen width is under a certain threshold
-    // disableFilmstripAutohiding: false,
+    disableFilmstripAutohiding: true,
 
     // Specifies whether the chat emoticons are disabled or not
     // disableChatSmileys: false,
@@ -1360,7 +1360,7 @@ config.enableClosePage = false;
 
 // Default language.
 // Require users to always specify a display name.
-config.requireDisplayName = false;
+config.requireDisplayName = true;
 
 // Chrome extension banner.
 // Advanced.
